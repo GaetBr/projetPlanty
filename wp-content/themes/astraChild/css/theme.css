@@ -56,3 +56,27 @@ header ul li:last-child:hover {
 }
 
   /*** PAGE ACCUEIL ***/
+
+
+/*** FOOTER ***/
+
+.site-below-footer-wrap {
+  height: 60px !important;
+}
+
+/***** MEDIA QUERIES *****/
+
+/* Page d'accueil */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .name-title, .opinion-text {
+    text-align: center !important;
+  }
+}
+
+/* Code CSS pour les résolutions d'écran supérieures à 1440px */
+@media screen and (min-width: 1441px) {
+  body {
+    max-width: 1440px; 
+    margin: 0 auto;
+  }
+}
