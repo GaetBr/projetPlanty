@@ -62,6 +62,28 @@ header ul li:last-child:hover {
   background-color: #C02E44;
 }
 
+/* Ajouter un espace à droite pour le lien "Admin" */
+.menu-item.admin-link {
+  margin-right: 35px;
+  margin-left: 15px;
+}
+
+.menu-item.admin-link a {
+  color: black; /* Changer la couleur du texte en noir */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+}
+
+/* Style au survol (hover) du lien "Admin" */
+.menu-item.admin-link:hover a {
+  color: black;
+  transform: scale(1.1);
+}
+
+#ast-hf-mobile-menu {
+  text-align: center;
+}
+
+
 /***** PAGE ACCUEIL *****/
 /************************/
 
@@ -99,7 +121,7 @@ header ul li:last-child:hover {
 
 /* Style pour le bouton d'envoi */
 .wpcf7-form input[type="submit"] {
-  width: 100%;
+  width: 200px;
   height: 60px;
   background-color: #E0B9B4;
   color: #fff;
@@ -326,14 +348,41 @@ label {
     padding-left: 0px;
   }
 
-}
+    /* Désactiver les effets de hover pour le lien "Admin" */
+    .menu-item.admin-link:hover a {
+      transform: none;
+    }
+  
+    /* Désactiver les effets de hover pour le lien dans le premier élément de la liste */
+    header ul li:first-child a:hover {
+      transform: none;
+    }
+  
+    /* Désactiver les effets de hover pour le dernier élément de la liste (li:last-child) */
+    header ul li:last-child:hover {
+      background-color: #E0B9B4;
+    }
+  
+    /* Désactiver les effets de hover pour le bouton d'envoi du formulaire */
+    .wpcf7-form input[type="submit"]:hover {
+      background-color: #E0B9B4;
+    }
+  
+    /* Désactiver les effets de hover pour les boutons "+" et "-" */
+    .btnplus,
+    .btnmoins:hover {
+      background-color: #dc9f96;
+    }
+    
+  }
+
 
 /***** > 1440px *****/
 @media screen and (min-width: 1441px) {
 
-  body {
+  /*body {
     max-width: 1440px; 
     margin: 0 auto;
-  }
+  }*/
 
 }
